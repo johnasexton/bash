@@ -8,7 +8,7 @@ export RELEASECHANNEL="stable"
 export MACHINETYPE="e2-medium"
 export DISKTYPE="pd-standard"
 export DISKSIZE="100"
-export NUMNODES="3"
+export NUMNODES="4"
 
 gcloud beta container \
 --project ${GCPPROJECT} clusters create ${GKENAME} \
