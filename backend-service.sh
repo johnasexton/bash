@@ -53,11 +53,11 @@ echo "gcloud compute backend-services create ${BACKENDSERVICENAME} \
 echo "gcloud compute network-endpoint-groups list | grep nginx"
 
 #### NEW GCLB/IAP NEGs
-export NEGNAME1=k8s1-b64a9635-nginx-ingress-g-nginx-ingress-gclb-iap-8-9a46a361
+export NEGNAME1=
 export NEGZONE1=us-east4-a
-export NEGNAME2=k8s1-b64a9635-nginx-ingress-g-nginx-ingress-gclb-iap-8-9a46a361
+export NEGNAME2=
 export NEGZONE2=us-east4-b
-export NEGNAME3=k8s1-b64a9635-nginx-ingress-g-nginx-ingress-gclb-iap-8-9a46a361
+export NEGNAME3=
 export NEGZONE3=us-east4-c
 
 # add NEG to BACKEND
