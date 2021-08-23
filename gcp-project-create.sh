@@ -7,10 +7,12 @@ export PROJECT=initialkubetest-${ENV}
 export FOLDER_ID=
 export NAME=${PROJECT}
 export ACCOUNT_ID=
+export BUSINESSUNIT=ikt
+export BUSINESSDOMAIN=sales
 
 echo gcloud projects create ${PROJECT} \
   --no-enable-cloud-apis \
   --folder=${FOLDER_ID} \
-  --labels=initiative=${INITATIVE},env=${ENV},bu=wms,domain=supply-chain,environment=${ENV} \ # <= reevaluate these LABELS
+  --labels=initiative=${INITATIVE},env=${ENV},bu=${BUSINESSUNIT},domain=${BUSINESSDOMAIN},environment=${ENV} \ # <= reevaluate these LABELS
   --name=${NAME} \
   --billing-project=${ACCOUNT_ID}
