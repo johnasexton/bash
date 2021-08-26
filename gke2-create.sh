@@ -1,13 +1,13 @@
 #!/usr/local/bin/bash
 export GCPPROJECT="initialkubetest"
-export GKENAME="ikt-e1-01"
+export GKENAME="ikt-e1-02"
 export REGION="us-east1"
 export ZONE="us-east1-b"
 export GKEVERSION="1.19.12-gke.2100"
 export RELEASECHANNEL="stable"
-export MACHINETYPE="e2-medium"
+export MACHINETYPE="e2-small"
 export DISKTYPE="pd-standard"
-export DISKSIZE="100"
+export DISKSIZE="25"
 export NUMNODES="4"
 
 gcloud beta container \
@@ -23,7 +23,6 @@ gcloud beta container \
 --metadata disable-legacy-endpoints=true \
 --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" \
 --max-pods-per-node "110" \
---preemptible \
 --num-nodes ${NUMNODES} \
 --logging=SYSTEM,WORKLOAD \
 --monitoring=SYSTEM \
