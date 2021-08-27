@@ -9,7 +9,7 @@ export MACHINETYPE="e2-small"
 export DISKTYPE="pd-standard"
 export DISKSIZE="25"
 export MAXPODSPERNODE="110"
-export NUMNODES="4"
+export NUMNODES="3"
 
 gcloud beta container \
 --project ${GCPPROJECT} clusters create ${GKENAME} \
