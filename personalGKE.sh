@@ -1,6 +1,12 @@
 #!/bin/bash
-gcloud config set account redvoid@gmail.com
-gcloud config set project nginx-k8s-211319
-gcloud config set compute/zone us-central1-a
+
+# set variables
+export ACCOUNT="john.a.sexton@gmail.com"
+export GCP_PROJECT="initialkubetest"
+export ZONE="us-central1-c"
+
+gcloud config set account ${ACCOUNT}
+gcloud config set project ${GCP_PROJECT}
+gcloud config set compute/zone ${ZONE}
 gcloud config list
 gcloud auth list

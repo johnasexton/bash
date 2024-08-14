@@ -1,5 +1,5 @@
 #!/bin/bash
-CLUSTER=eim-nonprod-e4-01
+CLUSTER=ikt-nonprod-e4-01
 PROJECT=initialkubetest
 REGION=us-east1
 APPLICATION=jenkins

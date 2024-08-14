@@ -2,7 +2,7 @@
 
 # user set variables
 export GCPPROJECTID="initialkubetest"
-export REGION="us-east1"
+export REGION="us-central1"
 export TYPE="serviceAccount" # must be: "group","user","serviceAccount"
 export ROLE="roles/cloudscheduler.serviceAgent"
 # calculated variables
